@@ -1,0 +1,25 @@
+{
+  "name": "hameauderageade",
+  "version": "1.0.0",
+  "description": "hameau de rageade static website",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Chzzs/hameauderageade.git"
+  },
+  "keywords": [
+    "hameau",
+    "de",
+    "rageade",
+    "static"
+  ],
+  "author": "Chazz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chzzs/hameauderageade/issues"
+  },
+  "homepage": "https://github.com/Chzzs/hameauderageade"
+}

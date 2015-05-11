@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/fontcustom.css" rel="stylesheet">
+    <link href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" rel="stylesheet"/>
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/holder.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
+    <script src="js/script.js"></script>
+
+    <title>Hameau de Rageade</title>
+</head>
+
+<body data-spy="scroll">
+    <div class="navbar-wrapper">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <h1 class="text-center">
+                     Hameau de Rageade
+                </h1>
+            </div>	<!-- Navigation -->
+        </nav>
+    </div>
+    <div id="carousel-wrapper" class="hidden-xs">
+        <div id="carousel-hameau" class="carousel slide" data-ride="carousel">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="img/cover/DSC_0059.jpg" alt="hameau">
+                </div>
+                <div class="item ">
+                  <img src="img/cover/DSC_0066.jpg" alt="hameau">
+                </div>
+                <div class="item ">
+                  <img src="img/cover/DSC_0083.jpg" alt="hameau">
+                </div>
+                <div class="item ">
+                  <img src="img/cover/DSC_0094.jpg" alt="hameau">
+                </div>
+                <div class="item ">
+                  <img src="img/cover/DSC_0110.jpg" alt="hameau">
+                </div>
+                <div class="item ">
+                  <img src="img/cover/DSC_0116.jpg" alt="hameau">
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-hameau" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel-hameau" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div>
+    </div>
+
+    <div id="main-wrapper">
+        <div class="nav-row-wrapper">
+            <div class="row nav-row hidden-xs" data-spy="affix" data-offset-top="425">
+                <div class="col-ld-8 col-ld-offset-2 col-md-8 col-md-offset-2 col-sd-12">
+                     <div id="navigation" >
+                        <ul class="nav nav-pills nav-justified" id="nav-row" >
+                            <li class="active"><a href="#description">Description</a></li>
+                            <li><a href="#infos">Infos pratiques</a></li>
+                            <li><a href="#loisirs">Loisirs</a></li>
+                            <li><a href="#galerie">Galerie</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="description">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1" >
+                <div class="page-header">
+                  <h1>Gîte<small> Description</small></h1>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs">
+                    <img src="img/GDF.png" alt="logo gîte de france" class="img-responsive img-rounded">
+                    <img src="img/epis.png" alt="logo gîte de france" class="img-responsive" id="epis">
+                </div>
+                 
+
+                <p class="lead text-justify col-lg-8 col-md-8 col-sm-8 col-xs-12">Niché au sein de collines boisées, en plein cœur du Lot-et-Garonne, le Hameau de Rageade est un bout de monde. Le Lot-et-Garonne, département aux quarante deux Bastides, est traversé par deux rivières : La Garonne et Le Lot. Cette région agricole et fruitière, est le berceau du pruneau d'Agen.</p>
+                
+
+            </div>
+            
+        </div> <!-- Description -->
+        <div class="row" id="exterieur">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                <div class="page-header">
+                  <h1><small></small></h1>
+                </div>
+
+
+                <p class=" text-justify col-lg-8 col-md-8 col-sm-8 col-xs-12">Maison en pierre avec vue sur campagne<br>
+Terrasse couverte avec barbecue<br>
+Piscine 12x7m sécurisée avec vastes plages<br>
+Parc de 5 Ha à disposition<br>
+Vélos à disposition <br><br>
+Tarifs : De 630€ à 1200€ la semaine</p>
+                <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
+                    <img src="img/galerie/DSC_0116.jpg" class="img-responsive img-rounded">
+                </div>
+
+            </div>
+            
+        </div> <!-- Description -->
+        <div class="row" id="rez-de-chaussee">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                <div class="page-header">
+                  <h1><small> Rez-de-chaussée</small></h1>
+                </div>
+               
+                 
+
+                <p class="  text-justify col-lg-8 col-md-8 col-sm-8 col-xs-12">Terrasse couverte<br>
+Cuisine équipée :four, micro-ondes, machine à laver, lave-vaisselle<br>
+WC<br>
+Séjour-salle à manger </p>
+                <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
+                    <img src="img/galerie/DSC_0002.jpg" class="img-responsive img-rounded">
+                </div>
+                
+
+            </div>
+            
+        </div> <!-- Description -->
+        <div class="row" id="etage">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                <div class="page-header">
+                  <h1><small> 1er Étage</small></h1>
+                </div>
+               
+                 
+
+                <p class=" text-justify col-lg-8 col-md-8 col-sm-8 col-xs-12">Chambre 1 : 2 lits 90cm, douche et lavabo<br>
+                    Chambre 2 : 2 lits superposés 90cm et lit bébé<br>
+                    Chambre 3 : 1 lit 120 cm et 1 lit 90cm<br>
+                    Salle de bain<br>
+                    WC</p>
+                
+                <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
+                    <img src="img/galerie/DSC_0019.jpg" class="img-responsive img-rounded">
+                </div>
+            </div>
+            
+            
+        </div> <!-- Description -->
+        <div class="row" id="infos">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                <div class="page-header">
+                  <h1>Infos pratiques <small> Contact &amp; plan</small></h1>
+                </div>
+                <h3 class="col-lg-12">Contact</h3>
+                <div class="col-lg-10 col-lg-offset-1">
+                    <address>
+                      <strong>Monsieur &amp; Madame Laurent Craipeau</strong><br>
+                      Hameau de Rageade<br>
+                      Sembas, 47360<br>
+                      <abbr title="Phone">Tel:</abbr> 05 53 96 53 79
+                    </address>
+
+                    <address>
+                      <strong>Laurent Craipeau</strong><br>
+                      <a href="mailto:#">lescraipeau@voila.fr</a>
+                    </address>
+                </div>
+                <h3 class="col-lg-12">Plan</h3>
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class=" col-lg-12" id="map"></div>
+                </div>
+            </div>
+        </div> <!-- Infos pratiques -->
+        <div class="row" id="loisirs">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                <div class="page-header">
+                  <h1>Loisirs <small></small></h1>
+                </div>
+                <div class="col-lg-12">
+                <p class="lead">Aux alentours de nos gîtes de nombreuses activitées sont disponibles:</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <h3 class="text-center">Tennis</h3>
+                    <img class="img-responsive" src="img/liens/tennis.png">
+                    <a href="http://www.commune-mairie.fr/tennis/sembas-47297/" target="_blank" type="button" class="btn btn-default btn-block">Visiter</a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <h3 class="text-center">Équitation</h3>
+                    <img class="img-responsive" src="img/liens/equitation.png">
+                    <a href="http://www.ferme-equestre-lagravade.sitew.com/" target="_blank" type="button" class="btn btn-default btn-block">Visiter</a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <h3 class="text-center">Randonnée</h3>
+                    <img class="img-responsive" src="img/liens/randonnee.png">
+                    <a href="http://www.randolotetgaronne.net" target="_blank" type="button" class="btn btn-default btn-block">Visiter</a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <h3 class="text-center">Thalasso</h3>
+                    <img class="img-responsive" src="img/liens/thalasso.png">
+                    <a href="http://www.thermes-casteljaloux.com/" target ="_blank" type="button" class="btn btn-default btn-block">Visiter</a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <h3 class="text-center">Bowling</h3>
+                    <img class="img-responsive" src="img/liens/bowling.png">
+                    <a href="http://bowling.club.agenais.pagesperso-orange.fr" target ="_blank" type="button" class="btn btn-default btn-block">Visiter</a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <h3 class="text-center">Discothèque</h3>
+                    <img class="img-responsive" src="img/liens/discotheque.png">
+                    <a href="http://www.lewindsor.fr" target ="_blank" type="button" class="btn btn-default btn-block">Visiter</a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <h3 class="text-center">Golf</h3>
+                    <img class="img-responsive" src="img/liens/golf.png">
+                    <a href="http://www.vslgolf.com" target="_blank" type="button" class="btn btn-default btn-block">Visiter</a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <h3 class="text-center">Parc Animalier</h3>
+                    <img class="img-responsive" src="img/liens/parc.png">
+                    <a href=" http://www.z-animoland.com" target="_blank" type="button" class="btn btn-default btn-block">Visiter</a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <h3 class="text-center">ULM</h3>
+                    <img class="img-responsive" src="img/liens/ulm.png">
+                    <a href="http://ulmstex.com" target="_blank" type="button" class="btn btn-default btn-block">Visiter</a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <h3 class="text-center">Accrobranche</h3>
+                    <img class="img-responsive" src="img/liens/accrobranche.png">
+                    <a href="http://www.cap-cauderoue.com" target="_blank" type="button" class="btn btn-default btn-block">Visiter</a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <h3 class="text-center">Walibi</h3>
+                    <img class="img-responsive" src="img/liens/walibi.png">
+                    <a href="http://www.walibi.com" target="_blank" type="button" class="btn btn-default btn-block">Visiter</a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <h3 class="text-center">Grotte</h3>
+                    <img class="img-responsive" src="img/liens/grotte.png">
+                    <a href="http://www.grotte-de-lastournelle.fr" target="_blank" type="button" class="btn btn-default btn-block">Visiter</a>
+                </div>
+
+            </div>
+        </div> <!-- Loisirs -->
+        <div class="row" id="galerie">
+            <div class="page-header">
+                  <h1>Galerie <small></small></h1>
+                </div>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                
+                <div>
+                    <img class="img-galerie col-lg-4 img-responsive" src="img/galerie/DSC_0054.jpg">
+
+                    <img class="img-galerie col-lg-4 img-responsive" src="img/galerie/DSC_0005.jpg">
+                    <img class="img-galerie col-lg-4 img-responsive" src="img/galerie/DSC_0008.jpg">
+                    <img class="img-galerie col-lg-4 img-responsive" src="img/galerie/DSC_0094.jpg">
+
+                    <img class="img-galerie col-lg-4 img-responsive" src="img/galerie/DSC_0038.jpg">
+                    <img class="img-galerie col-lg-4 img-responsive" src="img/galerie/DSC_0050.jpg">
+                    <img class="img-galerie col-lg-4 img-responsive" src="img/galerie/DSC_0057.jpg">
+                    <img class="img-galerie col-lg-4 img-responsive" src="img/galerie/DSC_0019.jpg">
+                    <img class="img-galerie col-lg-4 img-responsive" src="img/galerie/DSC_0087.jpg">
+
+                    <img class="img-galerie col-lg-4 img-responsive" src="img/galerie/DSC_0075.jpg">
+                    <img class="img-galerie col-lg-4 img-responsive" src="img/galerie/DSC_0059.jpg">
+                    <img class="img-galerie col-lg-4 img-responsive" src="img/galerie/DSC_0002.jpg">
+
+                   
+                    
+                    
+
+
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    
+    <footer class="col-md-12 text-center">
+    <small>Site réalisé avec <a href="#">Bootstrap 3</a> — <a href="#">Leaftlet</a> &amp; <a href="#">MapBox</a> | Charles-Antoine Sohier </small>
+</footer>
+
+    <script>
+        var map = L.mapbox.map('map','chzzs.i4hc40l9').setView([44.327, 0.634], 13);
+        map.scrollWheelZoom.disable();
+    </script>
+</body>
+</html>
